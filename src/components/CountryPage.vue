@@ -44,12 +44,21 @@
     {{ this.data[0].altSpellings[2] }}
     </v-chip>
   </div>
-  <v-row>
+  <v-row class="mt-5">
       <v-col cols="6">
-          <h3>Latlong</h3>
+        <v-row>
+           <h3>Latlong</h3>
           <div style="font-size:50px;color:#ba68c8">
               {{ this.data[0].latlng[0] }},{{ this.data[0].latlng[1] }}
           </div>
+          <v-img
+            class="display-2 font-weight-bold mb-3"
+            style="margin-left:120px"
+            max-height="200"
+            max-width="200"
+            src="../assets/globe.svg"
+        ></v-img>
+        </v-row>
       </v-col>
          <v-col cols="6">
           <h3>Calling Code</h3>
